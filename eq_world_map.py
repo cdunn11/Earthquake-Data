@@ -3,11 +3,11 @@ import json
 from plotly.graph_objs import Scattergeo, Layout
 from plotly import offline
 
-filename = 'python_work/data_visualization/data/eq_data_30_day_m1.json'
+filename = 'EQ Data/eq_data_30_day_m1.json'
 with open(filename) as f:
     all_eq_data = json.load(f)
 
-readable_file = 'python_work/data_visualization/data/readable_eq_data.json'
+readable_file = 'EQ Data/readable_eq_data.json'
 with open(readable_file, 'w') as f:
     json.dump(all_eq_data, f, indent=4)
 
